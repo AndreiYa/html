@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.people, .no_smoking, .biohazard, .yin_yan{
+    position: absolute;
+}
+
+.no_smoking{
+    left: 125px;
+    top: 60px;
+    z-index: 1;
+}
+
+.people{
+    left: 265px;
+}
+
+.biohazard{
+    left: 45px;
+    top: 28px;
+}
+
+.yin_yan{
+    left: 155px;
+    top: 200px;
+}
+
+.people:hover{
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+}
+
+.biohazard:hover {
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.05);
+    transition: all 0.7s ease-in-out;
+}
+
+.yin_yan:hover{
+    cursor: pointer;
+    z-index: 3;
+    transform: scale(1.05);
+    transition: all 0.7s ease-out;
+}

@@ -1,0 +1,42 @@
+.wrapper{
+    margin: 10px 0;
+}
+
+.wrapper input[type="text"] {
+    width: 79%;
+    overflow: hidden;
+}
+
+.wrapper .public, .wrapper .public_name, .wrapper .enable_comment, .wrapper span{
+    display: inline-block;
+    width: 20%;
+}
+
+textarea{
+    width: 99%;
+}
+
+@media all and (max-width: 876px){
+    .wrapper input[type="text"] {
+        width: 100%;
+    }
+    .wrapper .public,  .wrapper .public_name, .wrapper .enable_comment, .wrapper span{
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 606px){
+    .wrapper .public,  .wrapper .public_name, .wrapper span{
+        display: block;
+        width: auto;
+    }
+
+    .wrapper .enable_comment{
+        display: inline;
+}
+
+    label{
+        display: block;
+    }
+}

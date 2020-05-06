@@ -1,0 +1,15 @@
+BODY { background-color: yellow; }
+P { font-size: 50%; } 
+SPAN { font-size: 1.5em; }
+.c2{
+    color:red;
+}
+img { 
+    float: right; 
+    border-width: 3; 
+    display: block; 
+}
+
+.s5 { font: red bold; }
+
+.s1 { color: red; font-weight: bold; }

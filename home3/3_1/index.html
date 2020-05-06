@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Fun with Font Color</title>
+</head>
+<body>
+    <h2>Тег Font</h2>
+    <h3>Описание</h3>
+    <p>Тег <strong>&lt;font&gt;</strong> представляет собой контейнер для изменения характеристик шрифта, таких как размер, цвет и гарнитура.<br>
+    Хотя этот тег до сих пор поддерживается всеми браузерами, он считается устаревшим и от его использования рекомендуется отказаться в пользу стилей.</p>
+    <h3>Атрибуты</h3>
+    <ul>
+        <li><strong><span>color</span></strong> - Устанавливает цвет текста.</li>
+        <li><strong><span>face</span></strong> - Определяет гарнитуру шрифта.</li>
+        <li><strong><span>size</span></strong> - Задает размер шрифта в условных единицах.</li>
+    </ul>
+    <p>Нас интересует атрибут <span>color</span>. Если написать цвет не общепринятыми значениями, а простым текстом?</p>
+    <h3>Font color <strong>#BruceWillis</strong></h3>
+    <pre>&lt;font color="#BruceWillis"&gt;Hello World!&lt;/font&gt;</pre>
+    <h3>Получаем:</h3>
+    <p><font color="#BruceWillis">Hello World!</font></p>
+    <hr>
+    <h3>Font color <strong>#CANDY</strong></h3>
+    <pre>&lt;font color="#CANDY"&gt;Hello World!&lt;/font&gt;</pre>
+    <h3>Получаем:</h3>
+    <p><font color="#CANDY">Hello World!</font></p>
+    <hr>
+    <h3>Font color <strong>#sick</strong></h3>
+    <pre>&lt;font color="#sick"&gt;Hello World!&lt;/font&gt;</pre>
+    <h3>Получаем:</h3>
+    <p><font color="#sick">Hello World!</font></p>
+    <hr>
+    <h3>Font color <strong>#ChuckNorris</strong></h3>
+    <pre>&lt;font color="#ChuckNorris"&gt;Hello World!&lt;/font&gt;</pre>
+    <h3>Получаем:</h3>
+    <p><font color="#ChuckNorris">Hello World!</font></p>
+    <hr>
+    <h3>Почему так происходит?</h3>
+    <p>Оказывается, так заведено еще со времен популярности Netscape:</p>
+    <blockquote>Пропускаемые цифры распознаются как 0[...]. Некорректные символы распознаются как 0. Так что, например, значения #F0F0F0, F0F0F0, F0F0F, #FxFxFx и FxFxFx – одно и то же.
+    </blockquote>
+    <p>Если применить эти правила, то получим следующее:</p>
+        <ul>
+            <li><strong>Заменяем</strong> все неправильные шестнадцатеричные символы нулями 0, <strong>chucknorris</strong> превращается в <strong>c00c0000000</strong></li>
+            <li><strong>“Добиваем”</strong> число нулями до количества знаков, делимого на 3 (11 -> 12), получаем
+                <strong>c00c 0000 0000</strong></li>
+            <li><strong>Разбиваем</strong> на три группы, каждая из которых отвечает за одну компоненту <strong>RGB:
+                RGB (c00c, 0000, 0000)</strong></li>
+            <li><strong>Обрезаем</strong> каждый из аргументов справа, оставляя 2 символа, и получаем наш результат
+                <strong>RGB (c0, 00, 00) = #C00000 или он же RGB(192, 0, 0).</strong></li>
+        </ul>
+        <hr>
+        <hr>
+</body>
+</html>

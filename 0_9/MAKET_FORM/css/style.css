@@ -1,0 +1,47 @@
+.wrapper{
+    margin: 10px 0;
+}
+
+.wrapper .public, .wrapper .enable_comment, .wrapper span{
+    display: inline-block;
+    width: 220px;
+}
+
+.wrap{
+    float: left;
+    width: 224px;
+}
+.wrapp{
+    overflow: hidden;
+}
+
+.public_input, textarea{
+    width: 99%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media all and (max-width: 606px){
+    .wrapper .public{
+        display: block;
+    }
+    .wrapper select{
+        width: 99%;
+    }
+
+    .wrapper .enable_comment{
+        display: inline;
+    }
+
+    label{
+        display: block;
+    }
+    .wrap{
+        float: none;
+    }
+    .wrapp input[type="text"]{
+        width: 98%;
+    }
+}

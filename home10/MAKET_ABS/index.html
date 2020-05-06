@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Position</title>
+</head>
+<body>
+    <p>При поднесении мыши к изображениям заднего плана (biohazard.png, Man-and-woman.png, Yin_and_Yang.png), они должны становиться ближе к пользователю чем изображение переднего плана (No_smoking.png), т.е. всплывать на передний план.
+        До изображений — произвольный многострочный текст на всю ширину окна браузера; изображения находятся посередине ширины окна браузера и примыкают к тексту снизу, т.е. когда при сужении окна браузера высота текста автоматически увеличивается, изображения должны смещаться вниз, оставаясь отцентрованными. Изображения должны быть размещены с использованием абсолютного позиционирования (position: absolute), координаты изображений должны быть заданы в пикселях.</p>
+    <div class="container">
+        <div class="people"><img src="img/Man-and-woman.png" alt="people"></div>
+        <div class="no_smoking"><img src="img/No_smoking.png" alt="smoking"></div>
+        <div class="biohazard"><img src="img/biohazard.png" alt="bio"></div>
+        <div class="yin_yan"><img src="img/Yin_and_Yang.png" alt="YY"></div>
+    </div>
+</body>
+</html>

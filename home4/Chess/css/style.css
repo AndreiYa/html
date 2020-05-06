@@ -1,0 +1,15 @@
+.header {
+    position: relative;
+}
+
+.date {
+    color: green;
+}
+.subtitle {
+    color: red;
+    font-weight: 700;
+}
+.content {
+    color: blue;
+    font-style: italic;
+}

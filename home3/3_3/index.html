@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Безопасная палитра цветов</title>
+    <style>
+        body {font-family: 'Source Sans Pro', sans-serif;}
+        strong {color:blue;}
+        p {text-indent: 2em;}
+    </style>
+</head>
+<body>
+    <h2 style="color:blue">Безопасная Web-палитра</h2>
+    <p>Безопасная web-палитра — это набор цветов, который отображается одинаково во всех web-браузерах.</p>
+    <p>Если веб-браузер не в состоянии правильно отобразить тот или иной цвет, то он пытается подобрать похожий или смешивает несколько соседних цветов. Может так случиться, что исходный цвет будет замещён чем-то совершенно неподходящим.
+
+    <p><b>Сегодня уже весьма спорна целесообразность использования безопасной палитры, однако используя её, вы будете уверены, что цвета будут выглядеть неизменно хорошо и без искажений даже на очень старых компьютерах, вплоть до 8-битного режима отображения с поддержкой всего 256 цветов.</b></p>
+        
+    <p>Безопасные цвета были выведены математически, а не потому, что они кому-то больше пришлись по душе. Для получения безопасного цвета из Красного, Зелёного и Синего, нужно использовать только данные десятичные значения: <strong>0, 51, 102, 153, 204, 255</strong> — и никакие другие. Каждое из трёх шестнадцатеричных значений не должно отличаться от <strong>00, 33, 66, 99, CC, FF.</strong></p>
+    <p>В основном цвета определяют в форме RGB (количество красного, зелёного и синего). Цвет RGB можно записать в трёх видах:</p>
+    <ul>
+        <li><strong>#rrggbb</strong> — в шестнадцатиричном виде;</li>
+        <li><strong>#rgb</strong> — в сокращенном шестнадцатиричном виде;</li>
+        <li><strong>rgb(rrr,ggg,bbb)</strong> — в десятеричном виде.</li>
+    </ul>
+    <p>В шестнадцатиричной системе безопасная палитра диктует следующее ограничение в определении цвета: каждая пара чисел должна иметь один из следующих видов: <strong>00, 33, 66, 99, CC, EE или FF</strong>, например: <strong>#FF00EE.</strong></p>
+    <table width='100%'>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#000000'>&nbsp;<span style='color:#FFFFFF'>#000000</span></td>
+        <td bgcolor='#000033'>&nbsp;<span style='color:#FFFFFF'>#000033</span></td>
+        <td bgcolor='#000066'>&nbsp;<span style='color:#FFFFFF'>#000066</span></td>
+        <td bgcolor='#000099'>&nbsp;<span style='color:#FFFFFF'>#000099</span></td>
+        <td bgcolor='#0000CC'>&nbsp;<span style='color:#FFFFFF'>#0000CC</span></td>
+        <td bgcolor='#0000EE'>&nbsp;<span style='color:#FFFFFF'>#0000EE</span></td>
+        <td bgcolor='#0000FF'>&nbsp;<span style='color:#FFFFFF'>#0000FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#003300'>&nbsp;<span style='color:#FFFFFF'>#003300</span></td>
+        <td bgcolor='#003333'>&nbsp;<span style='color:#FFFFFF'>#003333</span></td>
+        <td bgcolor='#003366'>&nbsp;<span style='color:#FFFFFF'>#003366</span></td>
+        <td bgcolor='#003399'>&nbsp;<span style='color:#FFFFFF'>#003399</span></td>
+        <td bgcolor='#0033CC'>&nbsp;<span style='color:#FFFFFF'>#0033CC</span></td>
+        <td bgcolor='#0033EE'>&nbsp;<span style='color:#FFFFFF'>#0033EE</span></td>
+        <td bgcolor='#0033FF'>&nbsp;<span style='color:#FFFFFF'>#0033FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#006600'>&nbsp;<span style='color:#FFFFFF'>#006600</span></td>
+        <td bgcolor='#006633'>&nbsp;<span style='color:#FFFFFF'>#006633</span></td>
+        <td bgcolor='#006666'>&nbsp;<span style='color:#FFFFFF'>#006666</span></td>
+        <td bgcolor='#006699'>&nbsp;<span style='color:#FFFFFF'>#006699</span></td>
+        <td bgcolor='#0066CC'>&nbsp;<span style='color:#FFFFFF'>#0066CC</span></td>
+        <td bgcolor='#0066EE'>&nbsp;<span style='color:#FFFFFF'>#0066EE</span></td>
+        <td bgcolor='#0066FF'>&nbsp;<span style='color:#FFFFFF'>#0066FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#009900'>&nbsp;#009900</td>
+        <td bgcolor='#009933'>&nbsp;#009933</td>
+        <td bgcolor='#009966'>&nbsp;#009966</td>
+        <td bgcolor='#009999'>&nbsp;#009999</td>
+        <td bgcolor='#0099CC'>&nbsp;#0099CC</td>
+        <td bgcolor='#0099EE'>&nbsp;#0099EE</td>
+        <td bgcolor='#0099FF'>&nbsp;#0099FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#00CC00'>&nbsp;#00CC00</td>
+        <td bgcolor='#00CC33'>&nbsp;#00CC33</td>
+        <td bgcolor='#00CC66'>&nbsp;#00CC66</td>
+        <td bgcolor='#00CC99'>&nbsp;#00CC99</td>
+        <td bgcolor='#00CCCC'>&nbsp;#00CCCC</td>
+        <td bgcolor='#00CCEE'>&nbsp;#00CCEE</td>
+        <td bgcolor='#00CCFF'>&nbsp;#00CCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#00EE00'>&nbsp;#00EE00</td>
+        <td bgcolor='#00EE33'>&nbsp;#00EE33</td>
+        <td bgcolor='#00EE66'>&nbsp;#00EE66</td>
+        <td bgcolor='#00EE99'>&nbsp;#00EE99</td>
+        <td bgcolor='#00EECC'>&nbsp;#00EECC</td>
+        <td bgcolor='#00EEEE'>&nbsp;#00EEEE</td>
+        <td bgcolor='#00EEFF'>&nbsp;#00EEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#00FF00'>&nbsp;#00FF00</td>
+        <td bgcolor='#00FF33'>&nbsp;#00FF33</td>
+        <td bgcolor='#00FF66'>&nbsp;#00FF66</td>
+        <td bgcolor='#00FF99'>&nbsp;#00FF99</td>
+        <td bgcolor='#00FFCC'>&nbsp;#00FFCC</td>
+        <td bgcolor='#00FFEE'>&nbsp;#00FFEE</td>
+        <td bgcolor='#00FFFF'>&nbsp;#00FFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#330000'>&nbsp;<span style='color:#FFFFFF'>#330000</span></td>
+        <td bgcolor='#330033'>&nbsp;<span style='color:#FFFFFF'>#330033</span></td>
+        <td bgcolor='#330066'>&nbsp;<span style='color:#FFFFFF'>#330066</span></td>
+        <td bgcolor='#330099'>&nbsp;<span style='color:#FFFFFF'>#330099</span></td>
+        <td bgcolor='#3300CC'>&nbsp;<span style='color:#FFFFFF'>#3300CC</span></td>
+        <td bgcolor='#3300EE'>&nbsp;<span style='color:#FFFFFF'>#3300EE</span></td>
+        <td bgcolor='#3300FF'>&nbsp;<span style='color:#FFFFFF'>#3300FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#333300'>&nbsp;<span style='color:#FFFFFF'>#333300</span></td>
+        <td bgcolor='#333333'>&nbsp;<span style='color:#FFFFFF'>#333333</span></td>
+        <td bgcolor='#333366'>&nbsp;<span style='color:#FFFFFF'>#333366</span></td>
+        <td bgcolor='#333399'>&nbsp;<span style='color:#FFFFFF'>#333399</span></td>
+        <td bgcolor='#3333CC'>&nbsp;<span style='color:#FFFFFF'>#3333CC</span></td>
+        <td bgcolor='#3333EE'>&nbsp;<span style='color:#FFFFFF'>#3333EE</span></td>
+        <td bgcolor='#3333FF'>&nbsp;<span style='color:#FFFFFF'>#3333FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#336600'>&nbsp;<span style='color:#FFFFFF'>#336600</span></td>
+        <td bgcolor='#336633'>&nbsp;<span style='color:#FFFFFF'>#336633</span></td>
+        <td bgcolor='#336666'>&nbsp;<span style='color:#FFFFFF'>#336666</span></td>
+        <td bgcolor='#336699'>&nbsp;<span style='color:#FFFFFF'>#336699</span></td>
+        <td bgcolor='#3366CC'>&nbsp;<span style='color:#FFFFFF'>#3366CC</span></td>
+        <td bgcolor='#3366EE'>&nbsp;<span style='color:#FFFFFF'>#3366EE</span></td>
+        <td bgcolor='#3366FF'>&nbsp;<span style='color:#FFFFFF'>#3366FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#339900'>&nbsp;#339900</td>
+        <td bgcolor='#339933'>&nbsp;#339933</td>
+        <td bgcolor='#339966'>&nbsp;#339966</td>
+        <td bgcolor='#339999'>&nbsp;#339999</td>
+        <td bgcolor='#3399CC'>&nbsp;#3399CC</td>
+        <td bgcolor='#3399EE'>&nbsp;#3399EE</td>
+        <td bgcolor='#3399FF'>&nbsp;#3399FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#33CC00'>&nbsp;#33CC00</td>
+        <td bgcolor='#33CC33'>&nbsp;#33CC33</td>
+        <td bgcolor='#33CC66'>&nbsp;#33CC66</td>
+        <td bgcolor='#33CC99'>&nbsp;#33CC99</td>
+        <td bgcolor='#33CCCC'>&nbsp;#33CCCC</td>
+        <td bgcolor='#33CCEE'>&nbsp;#33CCEE</td>
+        <td bgcolor='#33CCFF'>&nbsp;#33CCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#33EE00'>&nbsp;#33EE00</td>
+        <td bgcolor='#33EE33'>&nbsp;#33EE33</td>
+        <td bgcolor='#33EE66'>&nbsp;#33EE66</td>
+        <td bgcolor='#33EE99'>&nbsp;#33EE99</td>
+        <td bgcolor='#33EECC'>&nbsp;#33EECC</td>
+        <td bgcolor='#33EEEE'>&nbsp;#33EEEE</td>
+        <td bgcolor='#33EEFF'>&nbsp;#33EEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#33FF00'>&nbsp;#33FF00</td>
+        <td bgcolor='#33FF33'>&nbsp;#33FF33</td>
+        <td bgcolor='#33FF66'>&nbsp;#33FF66</td>
+        <td bgcolor='#33FF99'>&nbsp;#33FF99</td>
+        <td bgcolor='#33FFCC'>&nbsp;#33FFCC</td>
+        <td bgcolor='#33FFEE'>&nbsp;#33FFEE</td>
+        <td bgcolor='#33FFFF'>&nbsp;#33FFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#660000'>&nbsp;<span style='color:#FFFFFF'>#660000</span></td>
+        <td bgcolor='#660033'>&nbsp;<span style='color:#FFFFFF'>#660033</span></td>
+        <td bgcolor='#660066'>&nbsp;<span style='color:#FFFFFF'>#660066</span></td>
+        <td bgcolor='#660099'>&nbsp;<span style='color:#FFFFFF'>#660099</span></td>
+        <td bgcolor='#6600CC'>&nbsp;<span style='color:#FFFFFF'>#6600CC</span></td>
+        <td bgcolor='#6600EE'>&nbsp;<span style='color:#FFFFFF'>#6600EE</span></td>
+        <td bgcolor='#6600FF'>&nbsp;<span style='color:#FFFFFF'>#6600FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#663300'>&nbsp;<span style='color:#FFFFFF'>#663300</span></td>
+        <td bgcolor='#663333'>&nbsp;<span style='color:#FFFFFF'>#663333</span></td>
+        <td bgcolor='#663366'>&nbsp;<span style='color:#FFFFFF'>#663366</span></td>
+        <td bgcolor='#663399'>&nbsp;<span style='color:#FFFFFF'>#663399</span></td>
+        <td bgcolor='#6633CC'>&nbsp;<span style='color:#FFFFFF'>#6633CC</span></td>
+        <td bgcolor='#6633EE'>&nbsp;<span style='color:#FFFFFF'>#6633EE</span></td>
+        <td bgcolor='#6633FF'>&nbsp;<span style='color:#FFFFFF'>#6633FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#666600'>&nbsp;<span style='color:#FFFFFF'>#666600</span></td>
+        <td bgcolor='#666633'>&nbsp;<span style='color:#FFFFFF'>#666633</span></td>
+        <td bgcolor='#666666'>&nbsp;<span style='color:#FFFFFF'>#666666</span></td>
+        <td bgcolor='#666699'>&nbsp;<span style='color:#FFFFFF'>#666699</span></td>
+        <td bgcolor='#6666CC'>&nbsp;<span style='color:#FFFFFF'>#6666CC</span></td>
+        <td bgcolor='#6666EE'>&nbsp;<span style='color:#FFFFFF'>#6666EE</span></td>
+        <td bgcolor='#6666FF'>&nbsp;<span style='color:#FFFFFF'>#6666FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#669900'>&nbsp;#669900</td>
+        <td bgcolor='#669933'>&nbsp;#669933</td>
+        <td bgcolor='#669966'>&nbsp;#669966</td>
+        <td bgcolor='#669999'>&nbsp;#669999</td>
+        <td bgcolor='#6699CC'>&nbsp;#6699CC</td>
+        <td bgcolor='#6699EE'>&nbsp;#6699EE</td>
+        <td bgcolor='#6699FF'>&nbsp;#6699FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#66CC00'>&nbsp;#66CC00</td>
+        <td bgcolor='#66CC33'>&nbsp;#66CC33</td>
+        <td bgcolor='#66CC66'>&nbsp;#66CC66</td>
+        <td bgcolor='#66CC99'>&nbsp;#66CC99</td>
+        <td bgcolor='#66CCCC'>&nbsp;#66CCCC</td>
+        <td bgcolor='#66CCEE'>&nbsp;#66CCEE</td>
+        <td bgcolor='#66CCFF'>&nbsp;#66CCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#66EE00'>&nbsp;#66EE00</td>
+        <td bgcolor='#66EE33'>&nbsp;#66EE33</td>
+        <td bgcolor='#66EE66'>&nbsp;#66EE66</td>
+        <td bgcolor='#66EE99'>&nbsp;#66EE99</td>
+        <td bgcolor='#66EECC'>&nbsp;#66EECC</td>
+        <td bgcolor='#66EEEE'>&nbsp;#66EEEE</td>
+        <td bgcolor='#66EEFF'>&nbsp;#66EEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#66FF00'>&nbsp;#66FF00</td>
+        <td bgcolor='#66FF33'>&nbsp;#66FF33</td>
+        <td bgcolor='#66FF66'>&nbsp;#66FF66</td>
+        <td bgcolor='#66FF99'>&nbsp;#66FF99</td>
+        <td bgcolor='#66FFCC'>&nbsp;#66FFCC</td>
+        <td bgcolor='#66FFEE'>&nbsp;#66FFEE</td>
+        <td bgcolor='#66FFFF'>&nbsp;#66FFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#990000'>&nbsp;<span style='color:#FFFFFF'>#990000</span></td>
+        <td bgcolor='#990033'>&nbsp;<span style='color:#FFFFFF'>#990033</span></td>
+        <td bgcolor='#990066'>&nbsp;<span style='color:#FFFFFF'>#990066</span></td>
+        <td bgcolor='#990099'>&nbsp;<span style='color:#FFFFFF'>#990099</span></td>
+        <td bgcolor='#9900CC'>&nbsp;<span style='color:#FFFFFF'>#9900CC</span></td>
+        <td bgcolor='#9900EE'>&nbsp;<span style='color:#FFFFFF'>#9900EE</span></td>
+        <td bgcolor='#9900FF'>&nbsp;<span style='color:#FFFFFF'>#9900FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#993300'>&nbsp;<span style='color:#FFFFFF'>#993300</span></td>
+        <td bgcolor='#993333'>&nbsp;<span style='color:#FFFFFF'>#993333</span></td>
+        <td bgcolor='#993366'>&nbsp;<span style='color:#FFFFFF'>#993366</span></td>
+        <td bgcolor='#993399'>&nbsp;<span style='color:#FFFFFF'>#993399</span></td>
+        <td bgcolor='#9933CC'>&nbsp;<span style='color:#FFFFFF'>#9933CC</span></td>
+        <td bgcolor='#9933EE'>&nbsp;<span style='color:#FFFFFF'>#9933EE</span></td>
+        <td bgcolor='#9933FF'>&nbsp;<span style='color:#FFFFFF'>#9933FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#996600'>&nbsp;<span style='color:#FFFFFF'>#996600</span></td>
+        <td bgcolor='#996633'>&nbsp;<span style='color:#FFFFFF'>#996633</span></td>
+        <td bgcolor='#996666'>&nbsp;<span style='color:#FFFFFF'>#996666</span></td>
+        <td bgcolor='#996699'>&nbsp;<span style='color:#FFFFFF'>#996699</span></td>
+        <td bgcolor='#9966CC'>&nbsp;<span style='color:#FFFFFF'>#9966CC</span></td>
+        <td bgcolor='#9966EE'>&nbsp;<span style='color:#FFFFFF'>#9966EE</span></td>
+        <td bgcolor='#9966FF'>&nbsp;<span style='color:#FFFFFF'>#9966FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#999900'>&nbsp;#999900</td>
+        <td bgcolor='#999933'>&nbsp;#999933</td>
+        <td bgcolor='#999966'>&nbsp;#999966</td>
+        <td bgcolor='#999999'>&nbsp;#999999</td>
+        <td bgcolor='#9999CC'>&nbsp;#9999CC</td>
+        <td bgcolor='#9999EE'>&nbsp;#9999EE</td>
+        <td bgcolor='#9999FF'>&nbsp;#9999FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#99CC00'>&nbsp;#99CC00</td>
+        <td bgcolor='#99CC33'>&nbsp;#99CC33</td>
+        <td bgcolor='#99CC66'>&nbsp;#99CC66</td>
+        <td bgcolor='#99CC99'>&nbsp;#99CC99</td>
+        <td bgcolor='#99CCCC'>&nbsp;#99CCCC</td>
+        <td bgcolor='#99CCEE'>&nbsp;#99CCEE</td>
+        <td bgcolor='#99CCFF'>&nbsp;#99CCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#99EE00'>&nbsp;#99EE00</td>
+        <td bgcolor='#99EE33'>&nbsp;#99EE33</td>
+        <td bgcolor='#99EE66'>&nbsp;#99EE66</td>
+        <td bgcolor='#99EE99'>&nbsp;#99EE99</td>
+        <td bgcolor='#99EECC'>&nbsp;#99EECC</td>
+        <td bgcolor='#99EEEE'>&nbsp;#99EEEE</td>
+        <td bgcolor='#99EEFF'>&nbsp;#99EEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#99FF00'>&nbsp;#99FF00</td>
+        <td bgcolor='#99FF33'>&nbsp;#99FF33</td>
+        <td bgcolor='#99FF66'>&nbsp;#99FF66</td>
+        <td bgcolor='#99FF99'>&nbsp;#99FF99</td>
+        <td bgcolor='#99FFCC'>&nbsp;#99FFCC</td>
+        <td bgcolor='#99FFEE'>&nbsp;#99FFEE</td>
+        <td bgcolor='#99FFFF'>&nbsp;#99FFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#CC0000'>&nbsp;<span style='color:#FFFFFF'>#CC0000</span></td>
+        <td bgcolor='#CC0033'>&nbsp;<span style='color:#FFFFFF'>#CC0033</span></td>
+        <td bgcolor='#CC0066'>&nbsp;<span style='color:#FFFFFF'>#CC0066</span></td>
+        <td bgcolor='#CC0099'>&nbsp;<span style='color:#FFFFFF'>#CC0099</span></td>
+        <td bgcolor='#CC00CC'>&nbsp;<span style='color:#FFFFFF'>#CC00CC</span></td>
+        <td bgcolor='#CC00EE'>&nbsp;<span style='color:#FFFFFF'>#CC00EE</span></td>
+        <td bgcolor='#CC00FF'>&nbsp;<span style='color:#FFFFFF'>#CC00FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#CC3300'>&nbsp;<span style='color:#FFFFFF'>#CC3300</span></td>
+        <td bgcolor='#CC3333'>&nbsp;<span style='color:#FFFFFF'>#CC3333</span></td>
+        <td bgcolor='#CC3366'>&nbsp;<span style='color:#FFFFFF'>#CC3366</span></td>
+        <td bgcolor='#CC3399'>&nbsp;<span style='color:#FFFFFF'>#CC3399</span></td>
+        <td bgcolor='#CC33CC'>&nbsp;<span style='color:#FFFFFF'>#CC33CC</span></td>
+        <td bgcolor='#CC33EE'>&nbsp;<span style='color:#FFFFFF'>#CC33EE</span></td>
+        <td bgcolor='#CC33FF'>&nbsp;<span style='color:#FFFFFF'>#CC33FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#CC6600'>&nbsp;<span style='color:#FFFFFF'>#CC6600</span></td>
+        <td bgcolor='#CC6633'>&nbsp;<span style='color:#FFFFFF'>#CC6633</span></td>
+        <td bgcolor='#CC6666'>&nbsp;<span style='color:#FFFFFF'>#CC6666</span></td>
+        <td bgcolor='#CC6699'>&nbsp;<span style='color:#FFFFFF'>#CC6699</span></td>
+        <td bgcolor='#CC66CC'>&nbsp;<span style='color:#FFFFFF'>#CC66CC</span></td>
+        <td bgcolor='#CC66EE'>&nbsp;<span style='color:#FFFFFF'>#CC66EE</span></td>
+        <td bgcolor='#CC66FF'>&nbsp;<span style='color:#FFFFFF'>#CC66FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#CC9900'>&nbsp;#CC9900</td>
+        <td bgcolor='#CC9933'>&nbsp;#CC9933</td>
+        <td bgcolor='#CC9966'>&nbsp;#CC9966</td>
+        <td bgcolor='#CC9999'>&nbsp;#CC9999</td>
+        <td bgcolor='#CC99CC'>&nbsp;#CC99CC</td>
+        <td bgcolor='#CC99EE'>&nbsp;#CC99EE</td>
+        <td bgcolor='#CC99FF'>&nbsp;#CC99FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#CCCC00'>&nbsp;#CCCC00</td>
+        <td bgcolor='#CCCC33'>&nbsp;#CCCC33</td>
+        <td bgcolor='#CCCC66'>&nbsp;#CCCC66</td>
+        <td bgcolor='#CCCC99'>&nbsp;#CCCC99</td>
+        <td bgcolor='#CCCCCC'>&nbsp;#CCCCCC</td>
+        <td bgcolor='#CCCCEE'>&nbsp;#CCCCEE</td>
+        <td bgcolor='#CCCCFF'>&nbsp;#CCCCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#CCEE00'>&nbsp;#CCEE00</td>
+        <td bgcolor='#CCEE33'>&nbsp;#CCEE33</td>
+        <td bgcolor='#CCEE66'>&nbsp;#CCEE66</td>
+        <td bgcolor='#CCEE99'>&nbsp;#CCEE99</td>
+        <td bgcolor='#CCEECC'>&nbsp;#CCEECC</td>
+        <td bgcolor='#CCEEEE'>&nbsp;#CCEEEE</td>
+        <td bgcolor='#CCEEFF'>&nbsp;#CCEEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#CCFF00'>&nbsp;#CCFF00</td>
+        <td bgcolor='#CCFF33'>&nbsp;#CCFF33</td>
+        <td bgcolor='#CCFF66'>&nbsp;#CCFF66</td>
+        <td bgcolor='#CCFF99'>&nbsp;#CCFF99</td>
+        <td bgcolor='#CCFFCC'>&nbsp;#CCFFCC</td>
+        <td bgcolor='#CCFFEE'>&nbsp;#CCFFEE</td>
+        <td bgcolor='#CCFFFF'>&nbsp;#CCFFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#EE0000'>&nbsp;<span style='color:#FFFFFF'>#EE0000</span></td>
+        <td bgcolor='#EE0033'>&nbsp;<span style='color:#FFFFFF'>#EE0033</span></td>
+        <td bgcolor='#EE0066'>&nbsp;<span style='color:#FFFFFF'>#EE0066</span></td>
+        <td bgcolor='#EE0099'>&nbsp;<span style='color:#FFFFFF'>#EE0099</span></td>
+        <td bgcolor='#EE00CC'>&nbsp;<span style='color:#FFFFFF'>#EE00CC</span></td>
+        <td bgcolor='#EE00EE'>&nbsp;<span style='color:#FFFFFF'>#EE00EE</span></td>
+        <td bgcolor='#EE00FF'>&nbsp;<span style='color:#FFFFFF'>#EE00FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#EE3300'>&nbsp;<span style='color:#FFFFFF'>#EE3300</span></td>
+        <td bgcolor='#EE3333'>&nbsp;<span style='color:#FFFFFF'>#EE3333</span></td>
+        <td bgcolor='#EE3366'>&nbsp;<span style='color:#FFFFFF'>#EE3366</span></td>
+        <td bgcolor='#EE3399'>&nbsp;<span style='color:#FFFFFF'>#EE3399</span></td>
+        <td bgcolor='#EE33CC'>&nbsp;<span style='color:#FFFFFF'>#EE33CC</span></td>
+        <td bgcolor='#EE33EE'>&nbsp;<span style='color:#FFFFFF'>#EE33EE</span></td>
+        <td bgcolor='#EE33FF'>&nbsp;<span style='color:#FFFFFF'>#EE33FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#EE6600'>&nbsp;<span style='color:#FFFFFF'>#EE6600</span></td>
+        <td bgcolor='#EE6633'>&nbsp;<span style='color:#FFFFFF'>#EE6633</span></td>
+        <td bgcolor='#EE6666'>&nbsp;<span style='color:#FFFFFF'>#EE6666</span></td>
+        <td bgcolor='#EE6699'>&nbsp;<span style='color:#FFFFFF'>#EE6699</span></td>
+        <td bgcolor='#EE66CC'>&nbsp;<span style='color:#FFFFFF'>#EE66CC</span></td>
+        <td bgcolor='#EE66EE'>&nbsp;<span style='color:#FFFFFF'>#EE66EE</span></td>
+        <td bgcolor='#EE66FF'>&nbsp;<span style='color:#FFFFFF'>#EE66FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#EE9900'>&nbsp;#EE9900</td>
+        <td bgcolor='#EE9933'>&nbsp;#EE9933</td>
+        <td bgcolor='#EE9966'>&nbsp;#EE9966</td>
+        <td bgcolor='#EE9999'>&nbsp;#EE9999</td>
+        <td bgcolor='#EE99CC'>&nbsp;#EE99CC</td>
+        <td bgcolor='#EE99EE'>&nbsp;#EE99EE</td>
+        <td bgcolor='#EE99FF'>&nbsp;#EE99FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#EECC00'>&nbsp;#EECC00</td>
+        <td bgcolor='#EECC33'>&nbsp;#EECC33</td>
+        <td bgcolor='#EECC66'>&nbsp;#EECC66</td>
+        <td bgcolor='#EECC99'>&nbsp;#EECC99</td>
+        <td bgcolor='#EECCCC'>&nbsp;#EECCCC</td>
+        <td bgcolor='#EECCEE'>&nbsp;#EECCEE</td>
+        <td bgcolor='#EECCFF'>&nbsp;#EECCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#EEEE00'>&nbsp;#EEEE00</td>
+        <td bgcolor='#EEEE33'>&nbsp;#EEEE33</td>
+        <td bgcolor='#EEEE66'>&nbsp;#EEEE66</td>
+        <td bgcolor='#EEEE99'>&nbsp;#EEEE99</td>
+        <td bgcolor='#EEEECC'>&nbsp;#EEEECC</td>
+        <td bgcolor='#EEEEEE'>&nbsp;#EEEEEE</td>
+        <td bgcolor='#EEEEFF'>&nbsp;#EEEEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#EEFF00'>&nbsp;#EEFF00</td>
+        <td bgcolor='#EEFF33'>&nbsp;#EEFF33</td>
+        <td bgcolor='#EEFF66'>&nbsp;#EEFF66</td>
+        <td bgcolor='#EEFF99'>&nbsp;#EEFF99</td>
+        <td bgcolor='#EEFFCC'>&nbsp;#EEFFCC</td>
+        <td bgcolor='#EEFFEE'>&nbsp;#EEFFEE</td>
+        <td bgcolor='#EEFFFF'>&nbsp;#EEFFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table width='100%'>
+        <tr>
+        <td bgcolor='#FF0000'>&nbsp;<span style='color:#FFFFFF'>#FF0000</span></td>
+        <td bgcolor='#FF0033'>&nbsp;<span style='color:#FFFFFF'>#FF0033</span></td>
+        <td bgcolor='#FF0066'>&nbsp;<span style='color:#FFFFFF'>#FF0066</span></td>
+        <td bgcolor='#FF0099'>&nbsp;<span style='color:#FFFFFF'>#FF0099</span></td>
+        <td bgcolor='#FF00CC'>&nbsp;<span style='color:#FFFFFF'>#FF00CC</span></td>
+        <td bgcolor='#FF00EE'>&nbsp;<span style='color:#FFFFFF'>#FF00EE</span></td>
+        <td bgcolor='#FF00FF'>&nbsp;<span style='color:#FFFFFF'>#FF00FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#FF3300'>&nbsp;<span style='color:#FFFFFF'>#FF3300</span></td>
+        <td bgcolor='#FF3333'>&nbsp;<span style='color:#FFFFFF'>#FF3333</span></td>
+        <td bgcolor='#FF3366'>&nbsp;<span style='color:#FFFFFF'>#FF3366</span></td>
+        <td bgcolor='#FF3399'>&nbsp;<span style='color:#FFFFFF'>#FF3399</span></td>
+        <td bgcolor='#FF33CC'>&nbsp;<span style='color:#FFFFFF'>#FF33CC</span></td>
+        <td bgcolor='#FF33EE'>&nbsp;<span style='color:#FFFFFF'>#FF33EE</span></td>
+        <td bgcolor='#FF33FF'>&nbsp;<span style='color:#FFFFFF'>#FF33FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#FF6600'>&nbsp;<span style='color:#FFFFFF'>#FF6600</span></td>
+        <td bgcolor='#FF6633'>&nbsp;<span style='color:#FFFFFF'>#FF6633</span></td>
+        <td bgcolor='#FF6666'>&nbsp;<span style='color:#FFFFFF'>#FF6666</span></td>
+        <td bgcolor='#FF6699'>&nbsp;<span style='color:#FFFFFF'>#FF6699</span></td>
+        <td bgcolor='#FF66CC'>&nbsp;<span style='color:#FFFFFF'>#FF66CC</span></td>
+        <td bgcolor='#FF66EE'>&nbsp;<span style='color:#FFFFFF'>#FF66EE</span></td>
+        <td bgcolor='#FF66FF'>&nbsp;<span style='color:#FFFFFF'>#FF66FF</span></td>
+        </tr>
+        <tr>
+        <td bgcolor='#FF9900'>&nbsp;#FF9900</td>
+        <td bgcolor='#FF9933'>&nbsp;#FF9933</td>
+        <td bgcolor='#FF9966'>&nbsp;#FF9966</td>
+        <td bgcolor='#FF9999'>&nbsp;#FF9999</td>
+        <td bgcolor='#FF99CC'>&nbsp;#FF99CC</td>
+        <td bgcolor='#FF99EE'>&nbsp;#FF99EE</td>
+        <td bgcolor='#FF99FF'>&nbsp;#FF99FF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#FFCC00'>&nbsp;#FFCC00</td>
+        <td bgcolor='#FFCC33'>&nbsp;#FFCC33</td>
+        <td bgcolor='#FFCC66'>&nbsp;#FFCC66</td>
+        <td bgcolor='#FFCC99'>&nbsp;#FFCC99</td>
+        <td bgcolor='#FFCCCC'>&nbsp;#FFCCCC</td>
+        <td bgcolor='#FFCCEE'>&nbsp;#FFCCEE</td>
+        <td bgcolor='#FFCCFF'>&nbsp;#FFCCFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#FFEE00'>&nbsp;#FFEE00</td>
+        <td bgcolor='#FFEE33'>&nbsp;#FFEE33</td>
+        <td bgcolor='#FFEE66'>&nbsp;#FFEE66</td>
+        <td bgcolor='#FFEE99'>&nbsp;#FFEE99</td>
+        <td bgcolor='#FFEECC'>&nbsp;#FFEECC</td>
+        <td bgcolor='#FFEEEE'>&nbsp;#FFEEEE</td>
+        <td bgcolor='#FFEEFF'>&nbsp;#FFEEFF</td>
+        </tr>
+        <tr>
+        <td bgcolor='#FFFF00'>&nbsp;#FFFF00</td>
+        <td bgcolor='#FFFF33'>&nbsp;#FFFF33</td>
+        <td bgcolor='#FFFF66'>&nbsp;#FFFF66</td>
+        <td bgcolor='#FFFF99'>&nbsp;#FFFF99</td>
+        <td bgcolor='#FFFFCC'>&nbsp;#FFFFCC</td>
+        <td bgcolor='#FFFFEE'>&nbsp;#FFFFEE</td>
+        <td bgcolor='#FFFFFF'>&nbsp;#FFFFFF</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table
+            </td>
+            <td height="15" background="/images/t_05.gif" width="15"></td>
+        </tr>
+        <tr>
+            <td height="15" background="/images/t_06.gif" width="15"></td>
+            <td height="15" background="/images/t_07.gif"></td>
+            <td height="15" background="/images/t_08.gif" width="15"></td>
+        </tr>
+        </table>
+        <p>Источники <a href="http://www.webmasterschool.ru/"> Webmasterschool.ru</a> и <a href="https://colorscheme.ru/web-safe-colors.html">Colorscheme.ru</a></p>
+        <hr>
+</body>
+</html>

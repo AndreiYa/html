@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теги</title>
+</head>
+<body>
+    <h1 align="center">Теги</h1>
+<hr>
+    <h2><font color="blue">Теги dl dt dd</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>dl</strong>&gt; входит в тройку элементов &lt;<strong>dl</strong>&gt;, &lt;<strong>dt</strong>&gt;, &lt;<strong>dd</strong>&gt;, предназначенных
+     для создания списка определений. <br> Каждый такой список начинается с контейнера &lt;<strong>dl</strong>&gt;, 
+         куда входит тег &lt;<strong>dt</strong>&gt; создающий термин и тег &lt;<strong>dd</strong>&gt; задающий определение этого термина.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+<pre>&lt;<strong>dl</strong>&gt;
+    &lt;<strong>dt</strong>&gt;Что такое FAQ?
+    &lt;<strong>dd</strong>&gt;FAQ (англ. frequently asked questions) — страница с часто задаваемыми вопросами по какой-либо теме с ответами на них.
+&lt;<strong>/dl</strong>&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <dl>
+        <dt>Что такое FAQ?
+        <dd>FAQ (англ. frequently asked questions) — страница с часто задаваемыми вопросами по какой-либо теме с ответами на них.
+      </dl>
+    <hr>
+    <h2><font color="blue">Тег pre</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Элемент &lt;<strong>pre</strong>&gt; определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.<br> 
+        По умолчанию, любое количество пробелов идущих в коде подряд, на веб-странице показывается как один.<br> 
+        Тег &lt;<strong>pre</strong>&gt; позволяет обойти эту особенность и отображать текст как требуется разработчику. </p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <pre>
+&lt;body&gt;
+    &lt;<strong>pre</strong>&gt;
+        Тег &lt;<strong>pre</strong>&gt; сохранит форматирование текста с точным количеством
+        проставленных пробелов и переносов строк.
+            <strong>как в исходном коде</strong>,     
+        К тому же, текст будет моноширинным.
+        Моноширинный &ndash; все буквы одинаковой ширины (машинописный шрифт).
+    &lt;<strong>/pre</strong>&gt;
+&lt;/body&gt;
+    </pre>
+    <h3><font color="grey">Результат</font></h3>
+    <pre>
+    Тег &lt;<strong>pre</strong>&gt; сохранит форматирование текста с точным количеством
+    проставленных пробелов и переносов строк.
+        <strong>как в исходном коде</strong>,     
+    К тому же, текст будет моноширинным.
+    Моноширинный &ndash; все буквы одинаковой ширины (машинописный шрифт).
+    </pre>
+    <hr>
+    <h2><font color="blue">Тег tt</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>tt</strong>&gt; отображает текст моноширинным текстом. Этот тег относится к группе тегов физического форматирования.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <pre>
+&lt;body&gt;
+    &lt;p&gt;Это шрифт вашего браузера по умолчанию.&lt;/p&gt;
+    &lt;p&gt;&lt;tt&gt;А это моноширинный шрифт.&lt;/tt&gt;&lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+        <p>Hello World Это шрифт вашего браузера по умолчанию.</p>
+        <p><tt>Hello World А это моноширинный шрифт.</tt></p> 
+    <hr>
+    <h2><font color="blue">Тег code</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>code</strong>&gt;предназначен для отображения одной или нескольких строк текста, 
+        который представляет собой программный код.<br> Сюда относятся имена переменных, ключевые слова, тексты функции и т.д.<br>
+        Браузеры обычно отображают содержимое контейнера &lt;<strong>code</strong>&gt; как моноширинный текст уменьшенного размера.<br>
+        В отличие от тега &lt;<strong>pre</strong>&gt; дополнительные пробелы внутри контейнера &lt;<strong>code</strong>&gt; не учитываются, так же, как и переносы текста. Поэтому используйте тег &lt;<strong>br</strong>&gt; или &lt;<strong>p</strong>&gt; для создания переносов.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+<pre>&lt;body&gt;
+    &lt;p&gt;&lt;code&gt;
+            function checkParent (src, dest) {&lt;Br&gt;
+             while (src != null) {&lt;Br&gt;
+               if (src.tagName == dest) return src&lt;Br&gt;
+                src = src.parentElement&lt;Br&gt;
+             }&lt;Br&gt;
+             return null&lt;Br&gt;
+            }
+    &lt;/code&gt;&lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p><code>
+        function checkParent (src, dest) {<Br>
+         while (src != null) {<Br>
+           if (src.tagName == dest) return src<Br>
+            src = src.parentElement<Br>
+         }<Br>
+         return null<Br>
+        }</code></p> 
+    <hr>
+    <h2><font color="blue">Тег kbd</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>kbd</strong>&gt;используется для обозначения текста, который набирается на клавиатуре или для названия клавиш.<br> 
+    Браузеры обычно помечают текст в контейнере &lt;<strong>kbd</strong>&gt; моноширинным шрифтом.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        Для закрашивания выделенной области фоновым цветом воспользуйтесь комбинацией 
+        &lt;kbd&gt;&lt;Ctrl&gt;+&lt;Backspace&gt;&lt;/kbd&gt; или &lt;kbd&gt;&lt;Ctrl&gt;+&lt;Delete&gt;&lt;/kbd&gt;.
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p> Для закрашивания выделенной области фоновым цветом 
+        воспользуйтесь комбинацией 
+        <kbd>&lt;Ctrl&gt;+&lt;Backspace&gt;</kbd> или 
+        <kbd>&lt;Ctrl&gt;+&lt;Delete&gt;</kbd>.</p>
+    <hr>
+    <h2><font color="blue">Тег var</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>var</strong>&gt;используется для выделения переменных компьютерных программ. Браузеры обычно помечают текст в контейнере &lt;<strong>var</strong>&gt; курсивным начертанием.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        В данном примере делается запрос к базе данных для получения поля &lt;var&gt;content_title&lt;/var&gt; из таблицы &lt;var&gt;content&lt;/var&gt;.
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p>В данном примере делается запрос к базе данных для получения поля <var>content_title</var> 
+        из таблицы <var>content</var>.</p>
+    <hr>
+    <h2><font color="blue">Теги sub и sup</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>sup</strong>&gt; Отображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и уменьшенного размера.</p>
+    <p>Тег &lt;<strong>sub</strong>&gt; Отображает шрифт в виде нижнего индекса. Шрифт при этом отображается ниже базовой линии текста и уменьшенного размера.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <p>Для &lt;<strong>sup</strong>&gt;</p>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        c&lt;sup&gt;2&lt;/sup&gt;=a&lt;sup&gt;2&lt;/sup&gt;+b&lt;sup&gt;2&lt;/sup&gt;
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+<p>Для &lt;<strong>sub</strong>&gt;</p>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;OH
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p>Для &lt;<strong>sup</strong>&gt;</p>
+    <p>c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup></p>
+    <p>Для &lt;<strong>sub</strong>&gt;</p>
+    <p>C<sub>2</sub>H<sub>5</sub>OH</p>
+    <hr>
+    <h2><font color="blue">Теги blockquote и q</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>blockquote</strong>&gt;предназначен для выделения длинных цитат внутри документа. Текст, обозначенный этим тегом, традиционно отображается как выровненный блок с отступами слева и справа (примерно по 40 пикселов), а также с отбивкой сверху и снизу.</p>
+    <p>Тег &lt;<strong>q</strong>&gt;используется для выделения в тексте цитат. Содержимое контейнера автоматически отображается в браузере в кавычках.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <p>Для &lt;<strong>blockquote</strong>&gt;</p>
+<pre>&lt;body&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;
+            В свое  время  драматург  Михаил  Львовский  написал  песню,
+            которую студенчество по праву считает  "своей",  хотя  написана
+            она была не студентом и не о студентах. Это песня  "Глобус".  В
+            ней есть слова, которые многое объясняют: "Потому что нам
+            нельзя без песен, Потому что  мир  без  песен тесен!"
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+&lt;/body&gt;</pre>
+<p>Для &lt;<strong>q</strong>&gt;</p>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+    Станислав Лец утверждал:&lt;q&gt;Чаще всего выход там, где был 
+        вход&lt;/q&gt;.
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p>Для &lt;<strong>blockquote</strong>&gt;</p>
+    <blockquote>
+    <p>В свое  время  драматург  Михаил  Львовский  написал  песню,<br>
+        которую студенчество по праву считает  "своей",  хотя  написана<br>
+        она была не студентом и не о студентах. Это песня  "Глобус".  В<br>
+        ней есть слова, которые многое объясняют: "Потому что нам<br>
+        нельзя без песен, Потому что  мир  без  песен тесен!"</p>
+    </blockquote>
+    <p>Для &lt;<strong>q</strong>&gt;</p>
+    <p>Станислав Лец утверждал: <q>Чаще всего выход там, где был 
+        вход</q>.</p>
+    <hr>
+    <h2><font color="blue">Теги ins и del</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>ins</strong>&gt;предназначен для выделения текста, который был добавлен в новую версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны. Браузеры обычно помечают текст в контейнере &lt;ins&gt; как подчеркнутый.</p>
+    <p>Тег &lt;<strong>del</strong>&gt;используется для выделения текста, который был удален в новой версии документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны. Браузеры обычно помечают текст в контейнере &lt;del&gt; как перечеркнутый.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        Заметим, что схожий результат с Firefox показывает и браузер 
+        Opera, но, как видно на рис. 1, в последующих версиях &lt;del&gt;этот 
+        недостаток был устранен&lt;/del&gt; &lt;ins&gt;подход разработчиков этого 
+        браузера был изменен&lt;/ins&gt;.
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p>Заметим, что схожий результат с Firefox показывает и браузер<br>
+        Opera, но, как видно на рис. 1, в последующих версиях <del>этот<br>
+        недостаток был устранен</del> <ins>подход разработчиков этого<br>
+        браузера был изменен</ins>.</p> 
+    <hr>
+    <h2><font color="blue">Тег address</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>address</strong>&gt;предназначен для хранения информации об авторе и может включать в себя любые элементы HTML вроде ссылок, текста, выделений и т.д. Планируется, что поисковые системы будут анализировать содержимое этого тега для сбора информации об авторах сайтов.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <pre>
+&lt;body&gt;
+    &lt;address&gt;Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911&lt;/address&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <address>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</address> 
+    <hr>
+    <h2><font color="blue">Теги nobr и wbr</font></h2>
+    <h3><font color="grey">Описание</font></h3>
+    <p>Тег &lt;<strong>nobr</strong>&gt;уведомляет браузер отображать текст без переносов.</p>
+    <p>Тег &lt;<strong>wbr</strong>&gt;указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.</p>
+    <h3><font color="grey">Пример использования</font></h3>
+    <p>Для &lt;<strong>nobl</strong>&gt;</p>
+<pre>&lt;body&gt;
+        &lt;p&gt;
+            &lt;nobl&gt;В свое  время  драматург  Михаил  Львовский  написал  песню,
+            которую студенчество по праву считает  "своей",  хотя  написана
+            она была не студентом и не о студентах. Это песня  "Глобус".  В
+            ней есть слова, которые многое объясняют: "Потому что нам
+            нельзя без песен, Потому что  мир  без  песен тесен!"&lt;/nobl&gt;
+        &lt;/p&gt;
+&lt;/body&gt;</pre>
+<p>Для &lt;<strong>wbr</strong>&gt;</p>
+<pre>&lt;body&gt;
+    &lt;p&gt;
+        метоксихлор&lt;wbr&gt;диэтиламино&lt;wbr&gt;метил&lt;wbr&gt;бутил&lt;wbr&gt;амино&lt;wbr&gt;акридин
+    &lt;/p&gt;
+&lt;/body&gt;</pre>
+    <h3><font color="grey">Результат</font></h3>
+    <p>Для &lt;<strong>nobl</strong>&gt;</p>
+    <p>Может привести к появлению горизонтальной полосы прокрутки.</p>
+    <p>Для &lt;<strong>wbr</strong>&gt;</p>
+    <p>При изменении ширины окна текст будет переноситься в тех местах, где указан тег &lt;wbr&gt;.</p>
+    <hr>
+</body>
+</html>

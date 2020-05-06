@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php" method="post">
+    <div>Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
+    <div class="wrapper">
+        <div class="wrap">
+            <label for="p_input" class="public_name">Название статьи:</label>
+        </div>
+            <div class="wrapp">
+                <input type="text" name="Article_Title" id="p_input" class="public_input">
+            </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="wrapper">
+        <label for="o_theme" class="public">Рубрика:</label>
+        <select name="option_theme" id="o_theme">
+            <option value="comp_tech">компьютерная техника</option>
+            <option value="graf_diz">графика и дизайн</option>
+            <option selected value="code">программирование</option>
+        </select>
+    </div>
+    <div class="wrapper">
+        <span>Публикация:</span>
+        <label><input type="radio" name="Public" class="radio" value="On_Site"> на сайте</label>
+        <label><input type="radio" name="Public" class="radio" value="In_Magazine"> в журнале</label>
+        <label><input type="radio" name="Public" class="radio" value="Site_and_Magazine"> на сайте и в журнале</label>
+    </div>
+    <div class="wrapper">
+        <label for="e_comm" class="enable_comment">Разрешить комментарии:</label>
+        <input type="checkbox" id="e_comm" name="Enable_Comments" checked>
+    </div>
+    <span>Текст статьи:</span><br>
+    <textarea name="content" id="cont"></textarea><br>
+    <input type="submit" value="Опубликовать">
+</form>
+</div>
+</body>
+</html>

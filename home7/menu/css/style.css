@@ -1,0 +1,98 @@
+
+/* ------------a inline-block border----------------- */
+
+.border_right_menu{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px rgb(207, 206, 206);
+    text-align: center;
+}
+
+.border_right_menu a{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 25px 10px 10px;
+    border-right: 3px solid red;
+    color:green;
+}
+
+.border_right_menu a:hover{
+    color: red;
+}
+
+.border_right_menu a:last-child{
+    border-right: none;
+}
+
+
+/* --------------ul Inline_block :after --------------------------- */
+
+
+.after_right_menu{
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px rgb(207, 206, 206);
+    text-align: center;
+}
+
+.after_right_menu ul li{
+    display: inline-block;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 0;
+}
+
+.after_right_menu ul li:after{
+    content: '';
+    border-right: 3px solid red;
+    padding: 10px 25px 10px 0;
+}
+
+.after_right_menu ul li:last-child:after{
+    border-right: none;
+    color:yellow;
+}
+
+.after_right_menu ul li a{
+    color:green;
+}
+
+.after_right_menu ul li a:hover{
+    color: red;
+}
+
+
+/* --------------------Flex------------------------------ */
+
+
+.container{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px rgb(207, 206, 206);
+    margin-top: 20px;
+    padding: 20px 0; 
+}
+
+.container ul li a{
+    color: green;
+}
+
+.container ul li a:hover{
+    color: red;
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+}
+
+.container ul li:after{
+    content: '';
+    border-right: 3px solid red;
+    padding: 10px 25px 10px 0;
+}
+
+.container ul li:last-child:after{
+    border: none;
+
+}
+.container ul li{
+    margin: 0 12px 0 22px;
+}

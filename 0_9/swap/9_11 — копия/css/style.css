@@ -1,0 +1,40 @@
+.wrapper{
+    margin: 10px 0;
+}
+
+.wrapper input[type="text"] {
+    width: 79%;
+}
+
+.wrapper .public, .wrapper .public_name, .wrapper .enable_comment, .wrapper span{
+    display: inline-block;
+    width: 20%;
+}
+
+textarea{
+    width: 99%;
+}
+
+@media all and (max-width: 876px){
+    .wrapper input[type="text"] {
+        width: 99%;
+    }
+    .wrapper .public,  .wrapper .public_name, .wrapper .enable_comment, .wrapper span{
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 606px) {
+    .wrapper .enable_comment {
+        display: inline;
+    }
+
+    label {
+        display: block;
+    }
+
+    select{
+        width: 100%;
+    }
+}

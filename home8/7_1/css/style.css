@@ -1,0 +1,615 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header .container{
+    position: relative;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header{
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo{
+    float: left;
+    margin-top: 33px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.header ul{
+    float: right;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 29px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+
+.header ul li a:hover{
+    color: black;
+}
+
+.header ul li:last-child{
+    margin-left: 0;
+}
+
+.logo_divider{
+    height: 36px;
+    width: 2px;
+    background: #7c7c7c;
+    position: absolute;
+    left: 110px;
+}
+
+.vertical_divider{
+    height: 50px;
+    width: 2px;
+    margin: 0 auto;
+    background: #333333;
+}
+
+.carousel{
+    height: 700px;
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/bg/slider_image_13247.jpg') center center/cover no-repeat;
+}
+
+.carousel .title{
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 213px;
+}
+
+.carousel .descr{
+    width: 626px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 49px;
+}
+
+.carousel_btn{
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 56px;
+    cursor: pointer;
+}
+
+.carousel_nav{
+    font-size: 18px;
+    color: #333333;
+    margin-top: 162px;
+}
+
+.carousel_nav span{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+.carousel_nav span:hover{
+    color: #333333;
+    cursor: pointer;
+}
+
+.welcome{
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome h2{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome .descr{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin-top: 49px;
+}
+
+.welcome_items{
+    margin-top: 132px;
+}
+
+.item_container{
+    border: 1.0px solid #cccccc;
+    margin-right:23px;
+}
+
+.item_container:last-child{
+    margin-right: 0;
+}
+
+.welcome_items .item_container{
+    width: 255px;
+    height: 291px;
+    display: inline-block;
+    text-align: center;
+}
+
+.item_title{
+    margin-top: 30px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.welcome_items .divider{
+    width: 50px;
+    height: 1px;
+    background-color: #cccccc;
+    margin-top: 20px;
+    margin: 20px auto 0px;
+}
+
+.welcome_items .item_descr{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin: 19px 17px 35px 18px;
+}
+
+.welcome_items a{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+
+.welcome_items .item_icon{
+    width: 70px;
+    height: 61px;
+    margin: -25px auto 0;
+}
+
+.diamond{
+    background: url('../img/icons/13290.png') center no-repeat #fff;
+}
+
+.rocket{
+    background: url('../img/icons/14955.png') center no-repeat #fff;
+}
+
+.notes{
+    background: url('../img/icons/14968.png') center no-repeat #fff;
+}
+
+.def{
+    background: url('../img/icons/14981.png') center no-repeat #fff;
+}
+
+.item_container:hover, .item_container a:hover{
+    border-color: #333333;
+    color: #333333;
+}
+
+/* section recent work */
+
+.recent_work{
+    height: 1176px;
+    background-color: #f8f8f8;
+    margin-top: 101px;
+}
+
+.recent_work h2{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.recent_work ul{
+    text-align: center;
+    margin-top: 119px;
+}
+
+.recent_work ul li{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #f8f8f8;
+}
+
+.recent_work ul li:hover{
+    border: 1px solid black;
+    color: #333333;
+}
+
+.work_item {
+    display: inline-block;
+    width: 350px;
+    height: 377px;
+    margin-top: 59px;
+    margin-right: 25px;
+}
+
+.work_item:nth-child(3), .work_item:nth-child(6){
+    margin-right: 0;
+}
+
+.work_item:nth-child(4), .work_item:nth-child(5), .work_item:nth-child(6){
+    margin-top: 30px;
+}
+
+.choose li{
+    margin: 40px 22px 0 0;
+    width: 351px;
+    height: 160px;
+    display: inline-block;
+    border-bottom: 1px solid #cccccc;
+}
+
+.choose .no_margin{
+    margin-right: 0;
+}
+
+.choose h2{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 30px;
+    margin-bottom: 66px;
+    text-align: center;
+}
+
+.choose img{
+    float: left;
+    display: inline;
+}
+
+.choose h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    margin: 13px 0 0 63px;
+}
+
+.choose .descr{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin-top: 51px;
+}
+
+.workers{
+    margin-top: 99px;
+    height: 642px;
+    background: url('../img/bg/background_14298.jpg') center center/cover no-repeat;
+
+}
+
+.workers h2 {
+    margin-top: 30px;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+}
+
+.workers ul li{
+    width: 255px;
+    height: 341px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 100px 26px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.workers ul li:last-child{
+    margin-right: 0;
+}
+
+.workers ul li .title{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+.workers ul li .text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.price h2{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.price fieldset{
+    margin-top: 108px;
+    width: 225px;
+    height: 428px;
+    border:1px solid #cccccc;
+    padding-left:32px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.price fieldset:last-child{
+    margin-right: 0;
+}
+
+.price legend{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.price fieldset h3 span{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.price fieldset h3{
+    margin-top: 49px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #8e8e8e;
+}
+
+.price fieldset ul li{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #8e8e8e;
+}
+
+.price fieldset ul{
+    margin-top: 39px;
+}
+
+.price fieldset button{
+    width: 196px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.action{
+    height: 100px;
+    background-color: #f8f8f8;
+    margin-top: 100px;
+}
+
+.action .title{
+    float:left;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 42px;
+}
+
+.action button{
+    width: 195px;
+    height: 50px;
+    background-color: #f8f8f8;
+    border: 1.0px solid #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333333;
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.contact fieldset{
+    height: 497px;
+    border: 1.0px solid #cccccc;
+    margin-top: 87px;
+}
+
+.contact legend{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+}
+
+.contact form{
+    margin-top: 100px;
+    margin-left: 193px;
+}
+
+.contact form input{
+    width: 318px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #CCCCCC;
+    padding-left: 33px;
+    border: none;
+    border-bottom:2px solid #CCCCCC;
+    outline: none;
+}
+
+.contact form input:nth-child(2){
+    margin-left: 28px;
+
+}
+
+.contact form input:last-child{
+    margin-top: 33px;
+    border: none;
+    margin-left: 264px;
+    width: 195px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1.0px solid #333333;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.contact form textarea{
+    width: 698px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+    border-bottom:2px solid #CCCCCC;
+    margin-top: 83px;
+    outline: none;
+    padding-left: 33px;
+}
+
+.footer{
+    margin-top: 99px;
+    height: 458px;
+    background: url("../img/bg/background_15696.jpg") center center/cover no-repeat;
+}
+
+.footer h2{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+}
+.footer .descr{
+    margin-top: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer .social{
+    margin-top: 37px;
+    text-align: center;
+}
+
+.footer .social li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border:1px solid #FFFFFF;
+    margin-right: 10px;
+}
+
+.footer .social li:last-child{
+    margin-right: 0;
+}
+
+.footer .social li{
+    background: url("../img/icons/facebook-f-brands.svg") center center/cover no-repeat;
+    background-size: 40%;
+}
+
+.hr_divider_white{
+    margin-top: 100px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.footer .copyright{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    float: left;
+}
+
+.footer .nav{
+    margin-top: 25px;
+}
+
+.footer .nav li{
+    display: inline-block;
+    float: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-right: 38px;
+}
+
+.footer .nav li:first-child{
+    margin-right: 0;
+}

@@ -1,0 +1,54 @@
+* {
+    padding: 0px 30px 0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 30px;
+}
+
+hr {
+    border: solid 1px lightgray;
+}
+
+pre {
+    padding: 10px 30px;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 5px rgba(126, 126, 126, 0.5); 
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+}
+
+td {
+    padding: 10px 80px 10px 0px;
+}
+
+td a {
+    padding-left: 0;
+}
+
+.mark_not_use, .mark_in_use {
+    font-size: 12px;
+}
+
+.mark_not_use{
+    background-color: rgba(230, 110, 51, 0.25);
+    color: rgb(230, 110, 51);
+    border-left: 4px solid rgb(230, 110, 51);
+    padding: 2px;
+}
+
+.mark_in_use {
+    background-color: rgba(0, 83, 159, 0.25);
+    color: rgb(0, 83, 159);
+    border-left: 4px solid rgb(0, 83, 159);
+    padding: 2px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 260px;
+    height: 248px;
+}

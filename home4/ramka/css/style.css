@@ -1,0 +1,16 @@
+div {
+    background: url('../img/top_left.png') no-repeat top left,
+                url('img/bottom_left.png') no-repeat bottom left,
+                url('img/top_right.png') no-repeat top right,
+                url('img/bottom_right.png') no-repeat bottom right,  
+                url('img/vertical_line1.png') repeat-y left,
+                url('img/vertical_line1.png') repeat-y right,
+                url('img/horizont_line1.png') repeat-x top,
+                url('img/horizont_line1.png') repeat-x bottom;
+                width:auto; 
+                padding:50px;
+}
+
+h2 {
+    text-align: center;
+}

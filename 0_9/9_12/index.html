@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php">
+    <span>
+        Для публикации вашей статьи, заполните пожалуйста следующую форму:
+    </span>
+    <label for="name_title">
+        Название статьи:
+    </label>
+    <input type="text" id="name_title">
+    <label for="category">
+        Рубрика:
+    </label>
+    <select name="category_name" id="category">
+        <option value="computers">компьютерная техника</option>
+        <option value="grafh_diz">графика и дизайн</option>
+        <option value="code">программирование</option>
+    </select>
+    <label for="on_site">
+        <input type="radio" id="on_site">на сайте
+    </label>
+    <label for="in_magazin">
+        <input type="radio" id="in_magazin">в журнале
+    </label>
+    <label for="mag_and_site">
+        <input type="radio" id="mag_and_site">на сайте и в журнале
+    </label>
+    <label for="enable_comm">Разрешить комментарии:
+        <input type="checkbox">
+    </label>
+    <label for=""></label>
+</form>
+</body>
+</html>

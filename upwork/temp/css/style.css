@@ -1,0 +1,40 @@
+.Main_logo{
+    position: relative;
+    left: 123px;
+    top: 63px;
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 50px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn{
+    width: 199px;
+    height: 66px;
+    background-color: f1f1f1;
+    box-shadow: 0 0 5px lightgray;
+}
+
+.about_us{ 
+    background: url('../img/bg/bg._shape_4.png') no-repeat;
+    margin-top: 112px;
+}

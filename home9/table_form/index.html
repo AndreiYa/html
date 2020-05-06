@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>table_form</title>
+</head>
+<body>
+    <h1>Рекомендации к выполнению работы:</h1>
+    <ul>
+        <li>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</li>
+        <li>Каждая форма должна правильно заполненные атрибуты name, method и action.</li>
+        <li>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - небольшой<br>
+            скрипт показывающий переменные переданные методами post и get.</li>
+    </ul>
+    <table width="700px">
+        <tr>
+            <td>
+                <h3>Простая форма поиска с вариантами:</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="search">
+                        <input type="submit" value="Искать"><br>
+                        <label for="radio_search_site">
+                            <input type="radio" name="search" id="radio_search_site"> На сайте
+                        </label>
+                        <label for="radio_search_google">
+                            <input type="radio" name="search" id="radio_search_google"> В google
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+
+            <td>
+                <h3>Простая форма поиска с вариантами:</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="search" required>
+                        <input type="submit" value="Искать" required><span>*</span><br>
+                        <label for="radio_search_site1">
+                            <input type="radio" name="search" id="radio_search_site1"> На сайте
+                        </label>
+                        <label for="radio_search_google1">
+                            <input type="radio" name="search" id="radio_search_google1"> В google
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+                <h3>Простая форма авторизации:</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                        <label for="login_1">
+                            <input type="text" name="Login_01" id="login_1" required><span>*</span> Логин
+                        </label><br>
+                        <label for="password_1">
+                            <input type="password" name="password_01" id="password_1" required><span>*</span> Пароль
+                        </label><br>
+                        <label for="stay_online">
+                            <input type="checkbox" name="in_system" id="stay_online"> Оставаться в системе
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+
+            <td valign="top">
+                <h3>Опрос(голосование):</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <label for="nothing">
+                            <input type="radio" name="social" id="nothing"> ничего
+                        </label><br>
+                        <label for="not_bad">
+                            <input type="radio" name="social" id="not_bad"> неплохо
+                        </label><br>
+                        <label for="good">
+                            <input type="radio" name="social" id="good"> хорошо
+                        </label><br>
+                        <label for="super">
+                            <input type="radio" name="social" id="super"> супер
+                        </label><br>
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+                <h3>Отзыв:</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Оставьте Ваш отзыв</legend>
+                            <label for="login_02">
+                                <input type="text" name="login_2" id="login_02" required><span>*</span> Имя<bк></bк>
+                            </label>
+                            <label for="email_01">
+                                <input type="email" name="email_1" id="email_01" required><span>*</span> Пароль<br>
+                            </label>
+                            <textarea name="send_form" id="send_text" cols="20" rows="2"></textarea>
+                            <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+
+            <td valign="top">
+                <h3>Выпадающий и мульти списки:</h3>
+                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <label for="">
+
+                        </label>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

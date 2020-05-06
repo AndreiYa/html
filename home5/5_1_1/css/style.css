@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url('../img/bg_1882.jpg') 20% top repeat-y;
+}
+
+.block{
+    background: url('../img/bg_banner.jpg') right top repeat-y;
+}
+
+.nav{
+    float: left;
+    width: 20%;
+}
+
+.content{
+    margin: 0 200px 0 20%;
+    background: url('../img/ball3.png'), url('../img/ball3.png'), url('../img/ball3.png'), url('../img/ball3.png');
+    background-repeat: no-repeat;
+    background-position: left top, right top, right bottom, left bottom;
+}
+
+.banner{
+    float: right;
+    width: 200px;  
+}
+.nav_bottom{
+    float: left;
+    width: 20%;
+}
+
+.banner_bottom{
+    float: right;
+    width: 200px;
+}
+
+.clear{
+    clear: both;
+}
+

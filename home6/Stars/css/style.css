@@ -1,0 +1,19 @@
+a{
+    background: url('../img/star0.png');
+    display: inline-block;
+    width: 75px;
+    height: 78px;
+    float: right;
+}
+
+div{
+    width: 375px;
+}
+
+a:hover{
+    content: url('../img/star1.png');
+}
+
+a:hover ~ a::before{
+    content: url('../img/star1.png');
+}

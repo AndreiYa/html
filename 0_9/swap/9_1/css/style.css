@@ -1,0 +1,49 @@
+.left{
+    float: left;
+    width: 20%;
+}
+
+.right{
+    float: right;
+    width: 80%;
+}                
+
+.text{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+select{
+    margin-bottom: 15px 0;
+}
+
+input{
+    margin: 14px 0;
+}
+
+label{
+    margin-right: 10px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .right{
+        float: none;
+    }
+    .left{
+        float: none;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px) {
+
+}

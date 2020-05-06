@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+}
+
+.header, .footer {
+    background-color: #ADD8E6;
+    color: #0000FF;
+    text-align: center;
+}
+
+.nav {
+    width: 250px;
+    background-color: #F0E68C;
+    vertical-align: top;
+}
+
+img {
+    float: left;
+    margin: 0 15px 10px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    background-image: url('../img/ball.jpeg');
+    background-repeat: repeat-y;
+    background-position: top right;
+    vertical-align: top;
+}
+
+p{
+    padding: 0 0 0 10px;
+}
+
+.nav > h3 {
+    margin-left: 20px;
+}

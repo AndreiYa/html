@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тег Area</title>
+</head>
+<body>
+    <h2>&lt;AREA&gt;</h2>
+    <div>
+        <p>Каждый элемент &lt;area&gt; (от англ. area — область, регион) определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Элемент &lt;area&gt; задаёт форму области, её размеры, устанавливает адрес документа, на который следует сделать ссылку. &lt;area&gt; всегда располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением.</p>
+        <p>Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.</p>
+    <hr>
+    </div>
+    <h3>Синтаксис</h3>
+    <div class="syntex">
+    <pre>&lt;map&gt;
+         &lt;area href="&lt;адрес&gt;"&gt;
+&lt;/map&gt;</pre>
+    <hr>
+    </div>
+    <h3>Закрывающий тег</h3>
+    <div>
+        <p>Не требуется.</p>
+    <hr>
+    </div>
+    <h3>Атрибуты</h3>
+    <div>
+        <table>
+            <tr>
+                <td><a href="https://webref.ru/html/area/alt" target="_blank">alt</a></td>
+                <td>Альтернативный текст для области изображения.</td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/coords" target="_blank">coords</a></td>
+                <td>Координаты активной области.</td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/href" target="_blank">href</a></td>
+                <td>Задаёт адрес документа, на который следует перейти.</td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/hreflang" target="_blank">hreflang</a></td>
+                <td>Указывает язык документа, на который ведёт ссылка. <span class="mark_in_use">Появился в HTML 5</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/nohref" target="_blank">nohref</a></td>
+                <td>Область без ссылки на другой документ. <span class="mark_not_use">Устарел в HTML 5</span></td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/shape" target="_blank">shape</a></td>
+                <td>Форма области.</td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/target" target="_blank">target</a></td>
+                <td>Имя фрейма, куда браузер будет загружать документ.</td>
+            </tr>
+            <tr>
+                <td><a href="https://webref.ru/html/area/type" target="_blank">type</a></td>
+                <td>Устанавливает MIME-тип документа, на который ведёт ссылка.</td>
+            </tr>
+        </table>
+    <hr>
+    </div>
+    <h3>Пример использования</h3>
+    <div>
+        <pre class="code">
+            &lt;map name="infographic"&gt;
+                &lt;area shape="rect" coords="184,6,253,27"
+                      href="https://mozilla.org"
+                      target="_blank" alt="Mozilla" /&gt;
+                &lt;area shape="circle" coords="130,136,60"
+                      href="https://developer.mozilla.org/"
+                      target="_blank" alt="MDN" /&gt;
+                &lt;area shape="poly" coords="130,6,253,96,223,106,130,39"
+                      href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+                      target="_blank" alt="Graphics" /&gt;
+                &lt;area shape="poly" coords="253,96,207,241,189,217,223,103"
+                      href="https://developer.mozilla.org/docs/Web/HTML"
+                      target="_blank" alt="HTML" /&gt;
+                &lt;area shape="poly" coords="207,241,54,241,72,217,189,217"
+                      href="https://developer.mozilla.org/docs/Web/JavaScript"
+                      target="_blank" alt="JavaScript" /&gt;
+                &lt;area shape="poly" coords="54,241,6,97,36,107,72,217"
+                      href="https://developer.mozilla.org/docs/Web/API"
+                      target="_blank" alt="Web APIs" /&gt;
+                &lt;area shape="poly" coords="6,97,130,6,130,39,36,107"
+                      href="https://developer.mozilla.org/docs/Web/CSS"
+                      target="_blank" alt="CSS" /&gt;
+            &lt;/map&gt;
+            &lt;img usemap="#infographic" src="img/mdn-info.png" alt="MDN infographic" /&gt;</pre>
+    <hr>
+    </div>
+    <div>
+     <h3>Получаем:</h3>   
+     <map name="infographic">
+        <area shape="rect" coords="184,6,253,27"
+              href="https://mozilla.org"
+              target="_blank" alt="Mozilla" />
+        <area shape="circle" coords="130,136,60"
+              href="https://developer.mozilla.org/"
+              target="_blank" alt="MDN" />
+        <area shape="poly" coords="130,6,253,96,223,106,130,39"
+              href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+              target="_blank" alt="Graphics" />
+        <area shape="poly" coords="253,96,207,241,189,217,223,103"
+              href="https://developer.mozilla.org/docs/Web/HTML"
+              target="_blank" alt="HTML" />
+        <area shape="poly" coords="207,241,54,241,72,217,189,217"
+              href="https://developer.mozilla.org/docs/Web/JavaScript"
+              target="_blank" alt="JavaScript" />
+        <area shape="poly" coords="54,241,6,97,36,107,72,217"
+              href="https://developer.mozilla.org/docs/Web/API"
+              target="_blank" alt="Web APIs" />
+        <area shape="poly" coords="6,97,130,6,130,39,36,107"
+              href="https://developer.mozilla.org/docs/Web/CSS"
+              target="_blank" alt="CSS" />
+    </map>
+    <img usemap="#infographic" src="img/mdn-info.png" alt="MDN infographic" />
+    <hr>
+    </div>
+</body>
+</html>

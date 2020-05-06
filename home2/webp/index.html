@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebP</title>
+    <style>
+        p{text-indent: 30px;}
+    </style>
+</head>
+<body>
+    <img src="img/webplogo.png" alt="Logo">
+    <h3>Сравнение формата WebP с Png и Jpeg</h3> 
+    <p>WebP — формат сжатия изображений с потерями и без потерь качества, предложенный компанией Google Inc. в 2010 году.</p>
+    <p>По данным HTTP Archive, изображения в среднем занимают до 64% веб-страницы. Учитывая это, оптимизация изображений — крайне важный аспект, особенно принимая во внимание то, что многие пользователи просто уйдут с сайта, если он не загрузится за несколько секунд.
+       Проблема с оптимизацией изображений в том, что мы хотим сохранить размер изображений, не жертвуя при этом качеством. Предыдущие попытки создать типы файлов, которые бы оптимизировали изображения лучше, чем стандартные JPEG, PNG и GIF, успеха не возымели.</p>
+    <p><strong>Согласно Google:</strong></p>
+    <ul>
+        <li>WebP сжимает изображения без потерь на 26% лучше, чем PNG.</li>
+        <li>WebP сжимает изображения с потерями лучше, чем JPEG на 25-34% при одинаковом индексе структурного сходства (SSIM)</li>
+        <li>WebP поддерживает прозрачность без потерь (известную, как альфа-канал) при увеличении размера всего лишь на 22%.</li>
+    </ul>
+    <h3>Немного теории</h3>
+    <p>Сжатие состоит из двух этапов. На первом делается попытка «предсказать» содержимое одних блоков по уже декодированным (три блока над текущим и один блок слева от него), на втором кодируется ошибка предсказания. Блоки отрисовываются в порядке слева направо и сверху вниз. Режимы предсказания работают с 3 размерами макроблоков.</p>
+ <table> 
+     <tr>
+         <td><h3>Пример №1</h3></td>
+     </tr>
+     <tr align="center">
+         <td>Формат JPEG</td>
+         <td>Формат png</td>
+         <td>Формат WebP</td>
+     </tr>
+     <tr>
+         <td><a href="img/5.jpg" target="_blank" title="Click to open"><img src="img/5.jpg" width="430px" alt="jpg"></a></td>
+         <td><a href="img/5.png" target="_blank" title="Click to open"><img src="img/5.png" width="430px" alt="png"></a></td>
+         <td><a href="img/5.webp" target="_blank" title="Click to open"><img src="img/5.webp" width="430px" alt="webp"></a></td>
+     </tr>
+     <tr>
+         <td>Разрешение 1024*752</td>
+         <td>Разрешение 1024*752</td>
+         <td>Разрешение 1024*752</td>
+     </tr>
+     <tr>
+         <td>Размер JPEG 120 Кбайт</td>
+         <td>Размер Png 1,58 Мбайт</td>
+         <td>Размер WebP 80,7 Кбайт</td>
+     </tr>
+     <tr>
+         <td><h3>Пример №2</h3></td>
+        </tr>
+     <tr align="center">
+        <td>Формат JPEG</td>
+        <td>Формат png</td>
+        <td>Формат WebP</td>
+    </tr>
+    <tr>
+        <td><a href="img/1.jpg" target="_blank" title="Click to open"><img src="img/1.jpg" width="430px" alt="jpg"></a></td>
+        <td><a href="img/1.png" target="_blank" title="Click to open"><img src="img/1.png" width="430px" alt="png"></a></td>
+        <td><a href="img/1.webp" target="_blank" title="Click to open"><img src="img/1.webp" width="430px" alt="webp"></a></td>
+    </tr>
+    <tr>
+        <td>Разрешение 550*368</td>
+        <td>Разрешение 550*368</td>
+        <td>Разрешение 550*368</td>
+    </tr>
+    <tr>
+        <td>Размер JPEG 43,8 Кбайт</td>
+        <td>Размер Png 366 Кбайт</td>
+        <td>Размер WebP 29,6 Кбайт</td>
+    </tr>
+ </table>
+<hr>
+ <p>Теперь возьмем исходник в Png без потери качества и конвертируем его в формат WebP и JPEG, затем поробуем подогнать их под один размер (изменяя процент сжатия).</p>
+ <table>
+     <tr align="center">
+        <td>Png</td>
+        <td>Jpeg</td>
+        <td>WebP</td>
+    </tr>
+    <tr>
+        <td><a href="img/Flower.png" target="_blank" title="Click to open"><img src="img/Flower.png" width="430px" alt="jpg"></a></td>
+        <td><a href="img/Flower.jpg" target="_blank" title="Click to open"><img src="img/Flower.jpg" width="430px" alt="png"></a></td>
+        <td><a href="img/flower.webp" target="_blank" title="Click to open"><img src="img/flower.webp" width="430px" alt="webp"></a></td>
+    </tr>
+    <tr>
+        <td>Исходное изображение</td>
+        <td>PhotoShop (Качество 8)</td>
+        <td>Конвертация Png to WebP</td>
+    </tr>
+    <tr>
+        <td>Размер Png 1,36 Мбайт</td>
+        <td>Размер Jpeg 245 Кбайт</td>
+        <td>Размер WebP 102 Кбайт</td>
+    </tr>
+    <tr align="center">
+        <td><h3>Подгоняем качество к минимальному 102 Кбайт<</td>
+        <td>/h3></td>
+        <td></td>
+    </tr>
+    <tr align="center">
+        <td>GIF</td>
+        <td>Jpeg</td>
+        <td>WebP</td>
+    </tr>
+    <tr>
+        <td><a href="img/Flower.gif" target="_blank" title="Click to open"><img src="img/Flower.gif" width="430px" alt="jpg"></a></td>
+        <td><a href="img/Flower102.jpg" target="_blank" title="Click to open"><img src="img/Flower102.jpg" width="430px" alt="png"></a></td>
+        <td><a href="img/flower.webp" target="_blank" title="Click to open"><img src="img/flower.webp" width="430px" alt="webp"></a></td>
+    </tr>
+    <tr>
+        <td>Размер GIF 108 Кбайт</td>
+        <td>Размер Jpeg 109 Кбайт</td>
+        <td>Размер WebP 102 Кбайт</td>
+    </tr>
+ </table>
+ <h3>Результаты</h3>
+ <p>Очень перспективный формат от Google, но и он не лишен недостатков. Очевидное преемущество это наличие альфа канала. </p>
+    <h3>Преимущества и Недостатки</h3>
+<table width="90%" border="1" cellpadding="15">
+    <!-- border-collapse: collapse НЕ РАБОТАЕТ -->
+<tr>
+    <td><strong>Преимущества</strong></td>
+    <td><strong>Недостатки</strong></td>
+</tr>
+<tr>
+    <td>Меньший размер файла</td>
+    <td>Плохая поддержка браузерами</td>
+</tr>
+<tr>
+    <td>Улучшенный алгоритм сжатия</td>
+    <td>Искажение имеет пластиковый вид</td>
+</tr>
+<tr>
+    <td>Более качественный переходы цвета</td>
+    <td>Неудобный интерфейс экспорта</td>
+</tr>
+<tr>
+    <td>Маска альфа-канала</td>
+    <td></td>
+</tr>
+</table>
+    <p><strong>P.S.</strong><em> Стандарт кодирования изображений WebP нельзя назвать новым, его представила Google в уже далёком 2010 году. Однако всё это время использование его было сильно ограничено из-за того, что разработчики браузеров имели собственное мнение по поводу того, какой новый формат изображений должен поддерживать их браузер. Но скоро ситуация изменится, т. к., наконец, поддержка WebP появится на подавляющем большинстве браузеров. Но стандарт WebP рискует стать популярным, будучи уже устаревшим, ведь его конкурент — AVIF, поддерживаемый альянсом большинства разработчиков браузеров, уже в активной разработке.</em>
+    </p>
+    </body>
+</html>
